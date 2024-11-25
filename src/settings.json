@@ -37,9 +37,6 @@
         "preloadBundles": [
             {
                 "bundle": "main"
-            },
-            {
-                "bundle": "main"
             }
         ],
         "bundleVers": {},
@@ -54,7 +51,9 @@
         "jsList": []
     },
     "scripting": {
-        "scriptPackages": []
+        "scriptPackages": [
+            "../src/chunks/bundle.js"
+        ]
     },
     "launch": {
         "launchScene": "db://assets/scenes/Crash.scene"

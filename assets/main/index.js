@@ -1,4 +1,4 @@
-System.register("bundle://main/_virtual/BetButtonControl.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './GameController.ts', './UIController.ts'], function (exports) {
+System.register("chunks:///_virtual/BetButtonControl.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './GameController.ts', './UIController.ts'], function (exports) {
   var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, EventTarget, Button, Node, Layout, SpriteFrame, EditBox, Label, Sprite, Vec3, Component, gameStageEventTarget, winningNumEventTarget;
   return {
     setters: [function (module) {
@@ -25,13 +25,13 @@ System.register("bundle://main/_virtual/BetButtonControl.ts", ['./rollupPluginMo
       winningNumEventTarget = module.winningNumEventTarget;
     }],
     execute: function () {
-      var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22;
+      var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23;
       cclegacy._RF.push({}, "94ae5IxmX9HH7tZ1piLiipG", "BetButtonControl", undefined);
       var ccclass = _decorator.ccclass,
         property = _decorator.property;
       var betAmountEventTarget = exports('betAmountEventTarget', new EventTarget());
       var redeemEventTarget = exports('redeemEventTarget', new EventTarget());
-      var BetButtonControl = exports('BetButtonControl', (_dec = ccclass('BetButtonControl'), _dec2 = property(Button), _dec3 = property(Button), _dec4 = property(Button), _dec5 = property(Button), _dec6 = property(Button), _dec7 = property(Button), _dec8 = property(Button), _dec9 = property(Button), _dec10 = property(Node), _dec11 = property(Node), _dec12 = property(Node), _dec13 = property(Layout), _dec14 = property(SpriteFrame), _dec15 = property(SpriteFrame), _dec16 = property(SpriteFrame), _dec17 = property(SpriteFrame), _dec18 = property(SpriteFrame), _dec19 = property(SpriteFrame), _dec20 = property(EditBox), _dec21 = property(EditBox), _dec22 = property(Label), _dec23 = property(Label), _dec(_class = (_class2 = /*#__PURE__*/function (_Component) {
+      var BetButtonControl = exports('BetButtonControl', (_dec = ccclass('BetButtonControl'), _dec2 = property(Button), _dec3 = property(Button), _dec4 = property(Button), _dec5 = property(Button), _dec6 = property(Button), _dec7 = property(Button), _dec8 = property(Button), _dec9 = property(Button), _dec10 = property(Node), _dec11 = property(Node), _dec12 = property(Node), _dec13 = property(Node), _dec14 = property(Layout), _dec15 = property(SpriteFrame), _dec16 = property(SpriteFrame), _dec17 = property(SpriteFrame), _dec18 = property(SpriteFrame), _dec19 = property(SpriteFrame), _dec20 = property(SpriteFrame), _dec21 = property(EditBox), _dec22 = property(EditBox), _dec23 = property(Label), _dec24 = property(Label), _dec(_class = (_class2 = /*#__PURE__*/function (_Component) {
         _inheritsLoose(BetButtonControl, _Component);
         function BetButtonControl() {
           var _this;
@@ -50,19 +50,21 @@ System.register("bundle://main/_virtual/BetButtonControl.ts", ['./rollupPluginMo
           _initializerDefineProperty(_this, "autoNode", _descriptor9, _assertThisInitialized(_this));
           _initializerDefineProperty(_this, "autoBetPanel", _descriptor10, _assertThisInitialized(_this));
           _initializerDefineProperty(_this, "betAmountBtnParent", _descriptor11, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "manualAutoBtnLayout", _descriptor12, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "sprNormal", _descriptor13, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "sprPressed", _descriptor14, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "sprBet_Betting", _descriptor15, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "sprBet_Cancel", _descriptor16, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "sprBet_Wait", _descriptor17, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "sprBet_Redeem", _descriptor18, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "editBetAmt", _descriptor19, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "editAutoBet", _descriptor20, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "lblBet", _descriptor21, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "lblWinAmount", _descriptor22, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "autoBetBtnParent", _descriptor12, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "manualAutoBtnLayout", _descriptor13, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "sprNormal", _descriptor14, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "sprPressed", _descriptor15, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "sprBet_Betting", _descriptor16, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "sprBet_Cancel", _descriptor17, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "sprBet_Wait", _descriptor18, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "sprBet_Redeem", _descriptor19, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "editBetAmt", _descriptor20, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "editAutoBet", _descriptor21, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "lblBet", _descriptor22, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "lblWinAmount", _descriptor23, _assertThisInitialized(_this));
           _this.currentStage = null;
-          _this.winAmount = 1.00;
+          _this.autoRedeemAmt = 0;
+          _this.autoBetCounter = 0;
           _this.isRedeemable = false;
           _this.isWait = false;
           return _this;
@@ -142,22 +144,64 @@ System.register("bundle://main/_virtual/BetButtonControl.ts", ['./rollupPluginMo
           this.editAutoBet.string = currentMultiplier.toFixed(2) + "X";
         };
         _proto.onClickedBtnAutoBet = function onClickedBtnAutoBet() {
+          var _this3 = this;
           if (this.autoBetPanel.active) {
             this.autoBetPanel.active = false;
           } else {
-            this.autoBetPanel.active = true;
+            if (this.btnAutoBet.node.children[0].getComponent(Label).string == "自动投注") {
+              this.autoBetPanel.active = true;
+              var _loop = function _loop(i) {
+                var btn = _this3.autoBetBtnParent.children[i].getComponent(Button);
+                btn.node.on(Button.EventType.CLICK, function () {
+                  return _this3.autoBetBtnClicked(i);
+                }, _this3);
+              };
+              for (var i = 0; i < this.autoBetBtnParent.children.length; i++) {
+                _loop(i);
+              }
+            } else {
+              this.btnAutoBet.node.children[0].getComponent(Label).string = "自动投注";
+              this.btnBet.node.getComponent(Sprite).spriteFrame = this.sprBet_Betting;
+              this.lblBet.string = "投注";
+              this.lblBet.node.position = new Vec3(0, 0);
+              this.lblWinAmount.node.active = false;
+              this.setBetBtnGroupInteractable(true);
+            }
+          }
+        };
+        _proto.autoBetBtnClicked = function autoBetBtnClicked(index) {
+          if (this.currentStage == 2) {
+            if (index == 0) {
+              this.btnAutoBet.node.children[0].getComponent(Label).string = "取消自动(∞)";
+            } else if (index == 1) {
+              this.btnAutoBet.node.children[0].getComponent(Label).string = "取消自动(1000)";
+            } else if (index == 2) {
+              this.btnAutoBet.node.children[0].getComponent(Label).string = "取消自动(100)";
+            } else if (index == 3) {
+              this.btnAutoBet.node.children[0].getComponent(Label).string = "取消自动(50)";
+            } else if (index == 4) {
+              this.btnAutoBet.node.children[0].getComponent(Label).string = "取消自动(30)";
+            } else if (index == 5) {
+              this.btnAutoBet.node.children[0].getComponent(Label).string = "取消自动(10)";
+            }
+            this.btnBet.node.getComponent(Sprite).spriteFrame = this.sprBet_Cancel;
+            this.lblBet.string = "撤销";
+            this.setBetBtnGroupInteractable(false);
+            betAmountEventTarget.emit('betAmount', this.editBetAmt.string);
+            this.autoRedeemValue();
+            this.autoBetPanel.active = false;
           }
         };
         _proto.betAmountBtnClicked = function betAmountBtnClicked() {
-          var _this3 = this;
-          var _loop = function _loop() {
-            var btn = _this3.betAmountBtnParent.children[i].getComponent(Button);
+          var _this4 = this;
+          var _loop2 = function _loop2() {
+            var btn = _this4.betAmountBtnParent.children[i].getComponent(Button);
             btn.node.on(Button.EventType.CLICK, function () {
-              _this3.editBetAmt.string = btn.node.children[0].getComponent(Label).string;
-            }, _this3);
+              _this4.editBetAmt.string = btn.node.children[0].getComponent(Label).string;
+            }, _this4);
           };
           for (var i = 0; i < this.betAmountBtnParent.children.length; i++) {
-            _loop();
+            _loop2();
           }
         };
         _proto.onClickedBtnBet = function onClickedBtnBet() {
@@ -179,6 +223,7 @@ System.register("bundle://main/_virtual/BetButtonControl.ts", ['./rollupPluginMo
               this.lblBet.string = "撤销";
               this.setBetBtnGroupInteractable(false);
               betAmountEventTarget.emit('betAmount', this.editBetAmt.string);
+              this.autoRedeemValue();
             } else {
               this.btnBet.node.getComponent(Sprite).spriteFrame = this.sprBet_Betting;
               this.lblBet.string = "投注";
@@ -203,13 +248,7 @@ System.register("bundle://main/_virtual/BetButtonControl.ts", ['./rollupPluginMo
               this.setBetBtnGroupInteractable(true);
             } else if (this.btnBet.node.getComponent(Sprite).spriteFrame.name == this.sprBet_Redeem.name) {
               if (this.isRedeemable) {
-                this.btnBet.node.getComponent(Sprite).spriteFrame = this.sprBet_Betting;
-                this.lblBet.string = "投注";
-                this.lblBet.node.position = new Vec3(0, 0);
-                this.lblWinAmount.node.active = false;
-                this.setBetBtnGroupInteractable(true);
-                this.isRedeemable = false;
-                redeemEventTarget.emit('redeem', true, this.lblWinAmount.string);
+                this.redeem();
               }
             }
           }
@@ -241,6 +280,11 @@ System.register("bundle://main/_virtual/BetButtonControl.ts", ['./rollupPluginMo
         _proto.onWinningNumChanged = function onWinningNumChanged(winningNum) {
           if (this.isWait == false) {
             this.lblWinAmount.string = winningNum.toString();
+            if (this.autoBetPanel.active) {
+              if (this.autoRedeemAmt <= winningNum) {
+                this.redeem();
+              }
+            }
           }
         };
         _proto.setBetBtnGroupInteractable = function setBetBtnGroupInteractable(interactable) {
@@ -252,11 +296,29 @@ System.register("bundle://main/_virtual/BetButtonControl.ts", ['./rollupPluginMo
           this.btnAuto.interactable = interactable;
           this.btnPlusBet.interactable = interactable;
           this.btnMinusBet.interactable = interactable;
-          this.btnAutoBet.interactable = interactable;
           this.btnHalf.interactable = interactable;
           this.btn2x.interactable = interactable;
           this.editBetAmt.enabled = interactable;
           this.editAutoBet.enabled = interactable;
+        };
+        _proto.autoRedeemValue = function autoRedeemValue() {
+          if (this.autoBetPanel.active) {
+            var autoRedeem = this.editAutoBet.string;
+            var currentMultiplier = 0;
+            if (autoRedeem) {
+              currentMultiplier = parseFloat(autoRedeem.replace("X", ""));
+            }
+            this.autoRedeemAmt = currentMultiplier;
+          }
+        };
+        _proto.redeem = function redeem() {
+          this.btnBet.node.getComponent(Sprite).spriteFrame = this.sprBet_Betting;
+          this.lblBet.string = "投注";
+          this.lblBet.node.position = new Vec3(0, 0);
+          this.lblWinAmount.node.active = false;
+          this.setBetBtnGroupInteractable(true);
+          this.isRedeemable = false;
+          redeemEventTarget.emit('redeem', true, this.lblWinAmount.string);
         };
         return BetButtonControl;
       }(Component), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "btnManual", [_dec2], {
@@ -336,77 +398,84 @@ System.register("bundle://main/_virtual/BetButtonControl.ts", ['./rollupPluginMo
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor12 = _applyDecoratedDescriptor(_class2.prototype, "manualAutoBtnLayout", [_dec13], {
+      }), _descriptor12 = _applyDecoratedDescriptor(_class2.prototype, "autoBetBtnParent", [_dec13], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor13 = _applyDecoratedDescriptor(_class2.prototype, "sprNormal", [_dec14], {
+      }), _descriptor13 = _applyDecoratedDescriptor(_class2.prototype, "manualAutoBtnLayout", [_dec14], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor14 = _applyDecoratedDescriptor(_class2.prototype, "sprPressed", [_dec15], {
+      }), _descriptor14 = _applyDecoratedDescriptor(_class2.prototype, "sprNormal", [_dec15], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor15 = _applyDecoratedDescriptor(_class2.prototype, "sprBet_Betting", [_dec16], {
+      }), _descriptor15 = _applyDecoratedDescriptor(_class2.prototype, "sprPressed", [_dec16], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor16 = _applyDecoratedDescriptor(_class2.prototype, "sprBet_Cancel", [_dec17], {
+      }), _descriptor16 = _applyDecoratedDescriptor(_class2.prototype, "sprBet_Betting", [_dec17], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor17 = _applyDecoratedDescriptor(_class2.prototype, "sprBet_Wait", [_dec18], {
+      }), _descriptor17 = _applyDecoratedDescriptor(_class2.prototype, "sprBet_Cancel", [_dec18], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor18 = _applyDecoratedDescriptor(_class2.prototype, "sprBet_Redeem", [_dec19], {
+      }), _descriptor18 = _applyDecoratedDescriptor(_class2.prototype, "sprBet_Wait", [_dec19], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor19 = _applyDecoratedDescriptor(_class2.prototype, "editBetAmt", [_dec20], {
+      }), _descriptor19 = _applyDecoratedDescriptor(_class2.prototype, "sprBet_Redeem", [_dec20], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor20 = _applyDecoratedDescriptor(_class2.prototype, "editAutoBet", [_dec21], {
+      }), _descriptor20 = _applyDecoratedDescriptor(_class2.prototype, "editBetAmt", [_dec21], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor21 = _applyDecoratedDescriptor(_class2.prototype, "lblBet", [_dec22], {
+      }), _descriptor21 = _applyDecoratedDescriptor(_class2.prototype, "editAutoBet", [_dec22], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor22 = _applyDecoratedDescriptor(_class2.prototype, "lblWinAmount", [_dec23], {
+      }), _descriptor22 = _applyDecoratedDescriptor(_class2.prototype, "lblBet", [_dec23], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _descriptor23 = _applyDecoratedDescriptor(_class2.prototype, "lblWinAmount", [_dec24], {
         configurable: true,
         enumerable: true,
         writable: true,
@@ -419,7 +488,7 @@ System.register("bundle://main/_virtual/BetButtonControl.ts", ['./rollupPluginMo
   };
 });
 
-System.register("bundle://main/_virtual/debug-view-runtime-control.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc'], function (exports) {
+System.register("chunks:///_virtual/debug-view-runtime-control.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc'], function (exports) {
   var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, Node, Canvas, UITransform, instantiate, Label, Color, RichText, Toggle, Button, director, Component;
   return {
     setters: [function (module) {
@@ -691,8 +760,8 @@ System.register("bundle://main/_virtual/debug-view-runtime-control.ts", ['./roll
   };
 });
 
-System.register("bundle://main/_virtual/GameController.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './UIController.ts', './Rocket.ts', './GameStages.ts', './BetButtonControl.ts'], function (exports) {
-  var _applyDecoratedDescriptor, _inheritsLoose, _createClass, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, EventTarget, Node, Component, countdownEventTarget, UIController, rocketEventTarget, Rocket, GameStage, redeemEventTarget, betAmountEventTarget;
+System.register("chunks:///_virtual/GameController.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './UIController.ts', './Rocket.ts', './GameStages.ts', './BetButtonControl.ts'], function (exports) {
+  var _applyDecoratedDescriptor, _inheritsLoose, _createClass, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, EventTarget, Node, Vec3, Component, countdownEventTarget, UIController, rocketEventTarget, Rocket, GameStage, redeemEventTarget, betAmountEventTarget;
   return {
     setters: [function (module) {
       _applyDecoratedDescriptor = module.applyDecoratedDescriptor;
@@ -705,6 +774,7 @@ System.register("bundle://main/_virtual/GameController.ts", ['./rollupPluginModL
       _decorator = module._decorator;
       EventTarget = module.EventTarget;
       Node = module.Node;
+      Vec3 = module.Vec3;
       Component = module.Component;
     }, function (module) {
       countdownEventTarget = module.countdownEventTarget;
@@ -769,6 +839,7 @@ System.register("bundle://main/_virtual/GameController.ts", ['./rollupPluginModL
           console.log('Countdown reached 1');
           // Add your logic here to handle the countdown reaching 2
           this.rocket.startDepartingUp();
+          this.uiController.scaleUp(this.rocket.fireNode, new Vec3(1, 5), 2);
         };
         _proto.onExploded = function onExploded() {
           var _this2 = this;
@@ -847,6 +918,8 @@ System.register("bundle://main/_virtual/GameController.ts", ['./rollupPluginModL
           var _this3 = this;
           // Logic for initializing the game
           this.uiController.initialGameStageUI();
+          this.rocket.node.active = true;
+          this.rocket.startVibrationEffect();
           setTimeout(function () {
             _this3.setGameStage(GameStage.LAUNCHING);
           }, 1500);
@@ -927,7 +1000,7 @@ System.register("bundle://main/_virtual/GameController.ts", ['./rollupPluginModL
   };
 });
 
-System.register("bundle://main/_virtual/GameStages.ts", ['cc'], function (exports) {
+System.register("chunks:///_virtual/GameStages.ts", ['cc'], function (exports) {
   var cclegacy;
   return {
     setters: [function (module) {
@@ -949,15 +1022,15 @@ System.register("bundle://main/_virtual/GameStages.ts", ['cc'], function (export
   };
 });
 
-System.register("bundle://main/_virtual/main", ['./debug-view-runtime-control.ts', './BetButtonControl.ts', './GameController.ts', './GameStages.ts', './Rocket.ts', './UIController.ts'], function () {
+System.register("chunks:///_virtual/main", ['./debug-view-runtime-control.ts', './BetButtonControl.ts', './GameController.ts', './GameStages.ts', './Rocket.ts', './UIController.ts'], function () {
   return {
     setters: [null, null, null, null, null, null],
     execute: function () {}
   };
 });
 
-System.register("bundle://main/_virtual/Rocket.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc'], function (exports) {
-  var _applyDecoratedDescriptor, _inheritsLoose, _createClass, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, EventTarget, Node, Prefab, UIOpacity, tween, Vec3, instantiate, Component;
+System.register("chunks:///_virtual/Rocket.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc'], function (exports) {
+  var _applyDecoratedDescriptor, _inheritsLoose, _createClass, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, EventTarget, Node, Prefab, SpriteFrame, Animation, UIOpacity, tween, Vec3, instantiate, UITransform, Quat, Sprite, Component;
   return {
     setters: [function (module) {
       _applyDecoratedDescriptor = module.applyDecoratedDescriptor;
@@ -971,19 +1044,24 @@ System.register("bundle://main/_virtual/Rocket.ts", ['./rollupPluginModLoBabelHe
       EventTarget = module.EventTarget;
       Node = module.Node;
       Prefab = module.Prefab;
+      SpriteFrame = module.SpriteFrame;
+      Animation = module.Animation;
       UIOpacity = module.UIOpacity;
       tween = module.tween;
       Vec3 = module.Vec3;
       instantiate = module.instantiate;
+      UITransform = module.UITransform;
+      Quat = module.Quat;
+      Sprite = module.Sprite;
       Component = module.Component;
     }],
     execute: function () {
-      var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9;
+      var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10;
       cclegacy._RF.push({}, "c5df6wNH0xLsYXhCR2KS05f", "Rocket", undefined);
       var ccclass = _decorator.ccclass,
         property = _decorator.property;
       var rocketEventTarget = exports('rocketEventTarget', new EventTarget());
-      var Rocket = exports('Rocket', (_dec = ccclass('Rocket'), _dec2 = property(Node), _dec3 = property(Node), _dec4 = property(Node), _dec5 = property(Node), _dec6 = property(Node), _dec7 = property(Node), _dec8 = property(Node), _dec9 = property(Prefab), _dec10 = property(Prefab), _dec(_class = (_class2 = /*#__PURE__*/function (_Component) {
+      var Rocket = exports('Rocket', (_dec = ccclass('Rocket'), _dec2 = property(Node), _dec3 = property(Node), _dec4 = property(Node), _dec5 = property(Node), _dec6 = property(Node), _dec7 = property(Node), _dec8 = property(Node), _dec9 = property(Prefab), _dec10 = property(Prefab), _dec11 = property(SpriteFrame), _dec(_class = (_class2 = /*#__PURE__*/function (_Component) {
         _inheritsLoose(Rocket, _Component);
         function Rocket() {
           var _this;
@@ -993,26 +1071,26 @@ System.register("bundle://main/_virtual/Rocket.ts", ['./rollupPluginModLoBabelHe
           _this = _Component.call.apply(_Component, [this].concat(args)) || this;
           _initializerDefineProperty(_this, "rocket", _descriptor, _assertThisInitialized(_this));
           _initializerDefineProperty(_this, "rocketNode", _descriptor2, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "light1", _descriptor3, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "light2", _descriptor4, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "flare", _descriptor5, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "rocketParent", _descriptor6, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "particleParent", _descriptor7, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "flare", _descriptor3, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "rocketParent", _descriptor4, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "particleParent", _descriptor5, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "fireNode", _descriptor6, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "fireFlyNode", _descriptor7, _assertThisInitialized(_this));
           _initializerDefineProperty(_this, "smokeParticle", _descriptor8, _assertThisInitialized(_this));
           _initializerDefineProperty(_this, "explodeParticle", _descriptor9, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "rocketDefaultSprite", _descriptor10, _assertThisInitialized(_this));
+          _this.rocketAnim = null;
           _this._isLaunching = false;
           _this._isDeparting = false;
           _this._vibrationTween = null;
+          _this._floatingTween = null;
           return _this;
         }
         var _proto = Rocket.prototype;
         _proto.start = function start() {
           this.startVibrationEffect();
-          //this.startFloatingAction();
-          //this.startFlyingAction();
-          //this.startDepartingUp();
+          this.rocketAnim = this.rocket.getComponent(Animation);
         };
-
         _proto.fadeInOut = function fadeInOut(node, duration) {
           var uiOpacity = node.getComponent(UIOpacity);
           if (uiOpacity) {
@@ -1030,10 +1108,8 @@ System.register("bundle://main/_virtual/Rocket.ts", ['./rollupPluginModLoBabelHe
           }
         };
         _proto.startFadeAnimations = function startFadeAnimations() {
-          if (this.light1 && this.light2 && this.flare) {
-            this.fadeInOut(this.light1, 0.3); // 0.5 seconds for each fade in/out
-            this.fadeInOut(this.light2, 0.3);
-            this.fadeInOut(this.flare, 0.3);
+          if (this.flare) {
+            this.fadeInOut(this.flare, 0.5);
           } else {
             console.error("One or more nodes are not initialized.");
           }
@@ -1045,6 +1121,8 @@ System.register("bundle://main/_virtual/Rocket.ts", ['./rollupPluginModLoBabelHe
           }
           var initialPosition = node.getPosition().clone();
           console.log("Starting vibration effect on node:", node.name);
+          this.flare.active = true;
+          this.startFadeAnimations();
           this._vibrationTween = tween(node).repeatForever(tween().by(duration, {
             position: new Vec3(intensity, 0, 0)
           }, {
@@ -1074,19 +1152,23 @@ System.register("bundle://main/_virtual/Rocket.ts", ['./rollupPluginModLoBabelHe
         _proto.startVibrationEffect = function startVibrationEffect() {
           if (this.rocket) {
             console.log("Rocket node is initialized:", this.rocket.name);
-            this.vibrateRocket(this.rocket, 0.2, 0.1); // Adjust intensity and duration as needed
+            this.vibrateRocket(this.rocket, 0.1, 0.1); // Adjust intensity and duration as needed
           } else {
             console.error("Rocket node is not initialized.");
           }
         };
         _proto.startDepartingUp = function startDepartingUp() {
           var _this2 = this;
+          this.fireNode.active = true;
+          this.fireNode.setScale(1, 0);
+          this.fireFlyNode.active = false;
+          this.fireNode.getComponent(Animation).play();
           var departureOffset = 500; // Set how far up the UFO should move
           var initialPosition = this.node.getPosition();
           var targetPosition = new Vec3(initialPosition.x, initialPosition.y + departureOffset, initialPosition.z);
 
-          // Create the tween for the upward movement and scaling down to zero
-          tween(this.rocketNode).parallel(tween().call(function () {
+          // Create the tween for the upward movement
+          tween(this.rocketNode).call(function () {
             var smokeInstance = instantiate(_this2.smokeParticle);
             smokeInstance.setPosition(new Vec3(-25.653, -18.182, 0));
             _this2.particleParent.addChild(smokeInstance);
@@ -1097,18 +1179,13 @@ System.register("bundle://main/_virtual/Rocket.ts", ['./rollupPluginModLoBabelHe
             position: targetPosition
           }, {
             easing: "expoIn"
-          }) // Move upwards to target position
-          , tween().to(2, {
-            scale: new Vec3(0, 0, 0)
-          }, {
-            easing: "expoIn"
-          }) // Shrink to zero size
-          ).call(function () {
+          }).call(function () {
             _this2.flare.active = false;
             _this2.particleParent.children[1].destroy();
             _this2.particleParent.children[2].destroy();
             rocketEventTarget.emit('departingFinished', true);
             _this2.stopVibrationEffect();
+            _this2.fireNode.active = false;
           }).start();
         };
         _proto.startFloatingAction = function startFloatingAction() {
@@ -1117,7 +1194,7 @@ System.register("bundle://main/_virtual/Rocket.ts", ['./rollupPluginModLoBabelHe
           var originalPosition = this.rocketNode.position.clone();
           console.log("Starting floating action tween");
           if (this.rocketNode) {
-            tween(this.rocketNode).repeatForever(tween().to(floatDuration, {
+            this._floatingTween = tween(this.rocketNode).repeatForever(tween().to(floatDuration, {
               position: new Vec3(originalPosition.x, originalPosition.y + floatHeight, originalPosition.z)
             }, {
               easing: 'sineInOut'
@@ -1127,39 +1204,61 @@ System.register("bundle://main/_virtual/Rocket.ts", ['./rollupPluginModLoBabelHe
               easing: 'sineInOut'
             })).start();
             console.log("Floating action tween started");
-            this.fadeInOut(this.light1, 0.8);
-            this.fadeInOut(this.light2, 0.5);
           } else {
             console.error("rocketNode is not initialized.");
+          }
+        };
+        _proto.stopFloatingAction = function stopFloatingAction() {
+          if (this._floatingTween) {
+            this._floatingTween.stop();
+            this._floatingTween = null;
+            console.log("Floating action tween stopped");
+          } else {
+            console.warn("No floating action tween to stop.");
           }
         };
         _proto.startFlyingAction = function startFlyingAction() {
           var _this3 = this;
           this.rocketNode.active = true;
-          this.rocketNode.setPosition(-50, -200);
-          this.rocketNode.setScale(0, 0);
-          tween(this.rocketNode).parallel(tween().to(1, {
-            position: new Vec3(0, 0)
+          this.rocketNode.setPosition(-400, -180);
+          this.rocketNode.setRotationFromEuler(0, 0, -80); // Initial rotation
+          this.rocketNode.setScale(1, 1, 1);
+          this.fireFlyNode.active = true;
+          this.fireFlyNode.getComponent(Animation).play();
+          console.log("Rocket Content Size:", this.rocketNode.getComponent(UITransform).contentSize);
+          console.log("Rocket Scale:", this.rocketNode.getScale());
+          tween(this.rocketNode).to(1, {
+            position: new Vec3(100, 0),
+            rotation: Quat.fromEuler(new Quat(), 0, 0, -30) // Use static method Quat.fromEuler
           }, {
             easing: "expoIn"
-          }), tween().to(1, {
-            scale: new Vec3(1, 1)
-          }, {
-            easing: "expoIn"
-          })).call(function () {
+          }).call(function () {
             rocketEventTarget.emit('isFlying', true);
             _this3.startFloatingAction();
+            _this3.rocketAnim.play();
           }).start();
         };
         _proto.startExplodeAction = function startExplodeAction() {
           var _this4 = this;
+          this.fireFlyNode.active = false;
           var explodeInstance = instantiate(this.explodeParticle);
           explodeInstance.setPosition(this.rocketNode.position);
           this.node.addChild(explodeInstance);
-          setTimeout(function () {
-            explodeInstance.destroy();
-            _this4.node.active = false;
-          }, 800);
+          var animation = explodeInstance.getComponent(Animation);
+          if (animation) {
+            animation.play();
+            animation.on(Animation.EventType.FINISHED, function () {
+              _this4.node.active = false;
+              explodeInstance.destroy();
+              _this4.rocketAnim.stop();
+              _this4.node.active = false;
+              _this4.rocketNode.setPosition(new Vec3(8.951, -0.557));
+              _this4.rocketNode.setRotationFromEuler(0, 0, 0);
+              _this4.fireNode.active = false;
+              _this4.stopFloatingAction();
+              _this4.rocket.getComponent(Sprite).spriteFrame = _this4.rocketDefaultSprite;
+            }, this);
+          }
         };
         _createClass(Rocket, [{
           key: "isLaunching",
@@ -1195,35 +1294,35 @@ System.register("bundle://main/_virtual/Rocket.ts", ['./rollupPluginModLoBabelHe
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "light1", [_dec4], {
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "flare", [_dec4], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "light2", [_dec5], {
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "rocketParent", [_dec5], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "flare", [_dec6], {
+      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "particleParent", [_dec6], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "rocketParent", [_dec7], {
+      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "fireNode", [_dec7], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "particleParent", [_dec8], {
+      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "fireFlyNode", [_dec8], {
         configurable: true,
         enumerable: true,
         writable: true,
@@ -1244,112 +1343,21 @@ System.register("bundle://main/_virtual/Rocket.ts", ['./rollupPluginModLoBabelHe
         initializer: function initializer() {
           return null;
         }
+      }), _descriptor10 = _applyDecoratedDescriptor(_class2.prototype, "rocketDefaultSprite", [_dec11], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
       })), _class2)) || _class));
       cclegacy._RF.pop();
     }
   };
 });
 
-System.register("bundle://main/_virtual/rollupPluginModLoBabelHelpers.js", [], function (exports) {
-  return {
-    execute: function () {
-      exports({
-        applyDecoratedDescriptor: _applyDecoratedDescriptor,
-        assertThisInitialized: _assertThisInitialized,
-        createClass: _createClass,
-        inheritsLoose: _inheritsLoose,
-        initializerDefineProperty: _initializerDefineProperty,
-        setPrototypeOf: _setPrototypeOf,
-        toPrimitive: _toPrimitive,
-        toPropertyKey: _toPropertyKey
-      });
-      function _defineProperties(target, props) {
-        for (var i = 0; i < props.length; i++) {
-          var descriptor = props[i];
-          descriptor.enumerable = descriptor.enumerable || false;
-          descriptor.configurable = true;
-          if ("value" in descriptor) descriptor.writable = true;
-          Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor);
-        }
-      }
-      function _createClass(Constructor, protoProps, staticProps) {
-        if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-        if (staticProps) _defineProperties(Constructor, staticProps);
-        Object.defineProperty(Constructor, "prototype", {
-          writable: false
-        });
-        return Constructor;
-      }
-      function _inheritsLoose(subClass, superClass) {
-        subClass.prototype = Object.create(superClass.prototype);
-        subClass.prototype.constructor = subClass;
-        _setPrototypeOf(subClass, superClass);
-      }
-      function _setPrototypeOf(o, p) {
-        _setPrototypeOf = exports('setPrototypeOf', Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
-          o.__proto__ = p;
-          return o;
-        });
-        return _setPrototypeOf(o, p);
-      }
-      function _assertThisInitialized(self) {
-        if (self === void 0) {
-          throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-        }
-        return self;
-      }
-      function _toPrimitive(input, hint) {
-        if (typeof input !== "object" || input === null) return input;
-        var prim = input[Symbol.toPrimitive];
-        if (prim !== undefined) {
-          var res = prim.call(input, hint || "default");
-          if (typeof res !== "object") return res;
-          throw new TypeError("@@toPrimitive must return a primitive value.");
-        }
-        return (hint === "string" ? String : Number)(input);
-      }
-      function _toPropertyKey(arg) {
-        var key = _toPrimitive(arg, "string");
-        return typeof key === "symbol" ? key : String(key);
-      }
-      function _initializerDefineProperty(target, property, descriptor, context) {
-        if (!descriptor) return;
-        Object.defineProperty(target, property, {
-          enumerable: descriptor.enumerable,
-          configurable: descriptor.configurable,
-          writable: descriptor.writable,
-          value: descriptor.initializer ? descriptor.initializer.call(context) : void 0
-        });
-      }
-      function _applyDecoratedDescriptor(target, property, decorators, descriptor, context) {
-        var desc = {};
-        Object.keys(descriptor).forEach(function (key) {
-          desc[key] = descriptor[key];
-        });
-        desc.enumerable = !!desc.enumerable;
-        desc.configurable = !!desc.configurable;
-        if ('value' in desc || desc.initializer) {
-          desc.writable = true;
-        }
-        desc = decorators.slice().reverse().reduce(function (desc, decorator) {
-          return decorator(target, property, desc) || desc;
-        }, desc);
-        if (context && desc.initializer !== void 0) {
-          desc.value = desc.initializer ? desc.initializer.call(context) : void 0;
-          desc.initializer = undefined;
-        }
-        if (desc.initializer === void 0) {
-          Object.defineProperty(target, property, desc);
-          desc = null;
-        }
-        return desc;
-      }
-    }
-  };
-});
-
-System.register("bundle://main/_virtual/UIController.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './GameController.ts'], function (exports) {
-  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, EventTarget, Button, Label, Node, Sprite, SpriteFrame, Prefab, UIOpacity, tween, v3, Vec3, ScrollView, instantiate, Component, GameController;
+System.register("chunks:///_virtual/UIController.ts", ['./rollupPluginModLoBabelHelpers.js', 'cc', './GameController.ts'], function (exports) {
+  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, EventTarget, Button, Label, Node, Sprite, Prefab, UIOpacity, tween, v3, Vec3, ScrollView, instantiate, Component, GameController;
   return {
     setters: [function (module) {
       _applyDecoratedDescriptor = module.applyDecoratedDescriptor;
@@ -1364,7 +1372,6 @@ System.register("bundle://main/_virtual/UIController.ts", ['./rollupPluginModLoB
       Label = module.Label;
       Node = module.Node;
       Sprite = module.Sprite;
-      SpriteFrame = module.SpriteFrame;
       Prefab = module.Prefab;
       UIOpacity = module.UIOpacity;
       tween = module.tween;
@@ -1377,13 +1384,13 @@ System.register("bundle://main/_virtual/UIController.ts", ['./rollupPluginModLoB
       GameController = module.GameController;
     }],
     execute: function () {
-      var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _dec26, _dec27, _dec28, _dec29, _dec30, _dec31, _dec32, _dec33, _dec34, _dec35, _dec36, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23, _descriptor24, _descriptor25, _descriptor26, _descriptor27, _descriptor28, _descriptor29, _descriptor30, _descriptor31, _descriptor32, _descriptor33, _descriptor34, _descriptor35;
+      var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _dec10, _dec11, _dec12, _dec13, _dec14, _dec15, _dec16, _dec17, _dec18, _dec19, _dec20, _dec21, _dec22, _dec23, _dec24, _dec25, _dec26, _dec27, _dec28, _dec29, _dec30, _dec31, _dec32, _dec33, _dec34, _dec35, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17, _descriptor18, _descriptor19, _descriptor20, _descriptor21, _descriptor22, _descriptor23, _descriptor24, _descriptor25, _descriptor26, _descriptor27, _descriptor28, _descriptor29, _descriptor30, _descriptor31, _descriptor32, _descriptor33, _descriptor34;
       cclegacy._RF.push({}, "237e3NaMwRKEaRYrmSTFnhz", "UIController", undefined);
       var ccclass = _decorator.ccclass,
         property = _decorator.property;
       var countdownEventTarget = exports('countdownEventTarget', new EventTarget());
       var winningNumEventTarget = exports('winningNumEventTarget', new EventTarget());
-      var UIController = exports('UIController', (_dec = ccclass('UIController'), _dec2 = property(Button), _dec3 = property(Button), _dec4 = property(Button), _dec5 = property(Button), _dec6 = property(Button), _dec7 = property(Button), _dec8 = property(Label), _dec9 = property(Label), _dec10 = property(Label), _dec11 = property(Label), _dec12 = property(Label), _dec13 = property(Label), _dec14 = property(Label), _dec15 = property(Node), _dec16 = property(Node), _dec17 = property(Node), _dec18 = property(Node), _dec19 = property(Node), _dec20 = property(Node), _dec21 = property(Node), _dec22 = property(Node), _dec23 = property(Node), _dec24 = property(Node), _dec25 = property(Node), _dec26 = property(Node), _dec27 = property(Node), _dec28 = property(Node), _dec29 = property(Node), _dec30 = property(Node), _dec31 = property(Node), _dec32 = property(Sprite), _dec33 = property(SpriteFrame), _dec34 = property(SpriteFrame), _dec35 = property(Prefab), _dec36 = property(Prefab), _dec(_class = (_class2 = /*#__PURE__*/function (_Component) {
+      var UIController = exports('UIController', (_dec = ccclass('UIController'), _dec2 = property(Button), _dec3 = property(Button), _dec4 = property(Button), _dec5 = property(Button), _dec6 = property(Button), _dec7 = property(Button), _dec8 = property(Label), _dec9 = property(Label), _dec10 = property(Label), _dec11 = property(Label), _dec12 = property(Label), _dec13 = property(Label), _dec14 = property(Label), _dec15 = property(Node), _dec16 = property(Node), _dec17 = property(Node), _dec18 = property(Node), _dec19 = property(Node), _dec20 = property(Node), _dec21 = property(Node), _dec22 = property(Node), _dec23 = property(Node), _dec24 = property(Node), _dec25 = property(Node), _dec26 = property(Node), _dec27 = property(Node), _dec28 = property(Node), _dec29 = property(Node), _dec30 = property(Node), _dec31 = property(Node), _dec32 = property(Node), _dec33 = property(Sprite), _dec34 = property(Prefab), _dec35 = property(Prefab), _dec(_class = (_class2 = /*#__PURE__*/function (_Component) {
         _inheritsLoose(UIController, _Component);
         function UIController() {
           var _this;
@@ -1421,12 +1428,12 @@ System.register("bundle://main/_virtual/UIController.ts", ['./rollupPluginModLoB
           _initializerDefineProperty(_this, "historyItemParent", _descriptor28, _assertThisInitialized(_this));
           _initializerDefineProperty(_this, "historyS_Panel", _descriptor29, _assertThisInitialized(_this));
           _initializerDefineProperty(_this, "historyS_ItemParent", _descriptor30, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "bgSprite", _descriptor31, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "bgInitialSpriteFrame", _descriptor32, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "bgFlightSpriteFrame", _descriptor33, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "historyItemPrefab", _descriptor34, _assertThisInitialized(_this));
-          _initializerDefineProperty(_this, "historyS_ItemPrefab", _descriptor35, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "starNode", _descriptor31, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "bgSprite", _descriptor32, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "historyItemPrefab", _descriptor33, _assertThisInitialized(_this));
+          _initializerDefineProperty(_this, "historyS_ItemPrefab", _descriptor34, _assertThisInitialized(_this));
           _this.gameController = null;
+          _this.bgTween = null;
           return _this;
         }
         var _proto = UIController.prototype;
@@ -1571,6 +1578,44 @@ System.register("bundle://main/_virtual/UIController.ts", ['./rollupPluginModLoB
             })).start();
           }).start();
         };
+        _proto.fadeInOut = function fadeInOut(node, duration) {
+          var uiOpacity = node.getComponent(UIOpacity);
+          if (uiOpacity) {
+            tween(uiOpacity).repeatForever(tween().to(duration, {
+              opacity: 255
+            }, {
+              easing: "sineInOut"
+            }).to(duration, {
+              opacity: 0
+            }, {
+              easing: "sineInOut"
+            })).start();
+          } else {
+            console.warn("Node does not have a UIOpacity component:", node);
+          }
+        };
+        _proto.bgAnimation = function bgAnimation() {
+          var _this7 = this;
+          this.bgTween = tween(this.bgSprite.node).to(60, {
+            position: v3(0, -356.549, 0)
+          }).call(function () {
+            _this7.stopBgAnimation();
+          }).start();
+        };
+        _proto.stopBgAnimation = function stopBgAnimation() {
+          if (this.bgTween) {
+            this.bgTween.stop();
+            this.bgTween = null; // Optionally clear the reference
+          }
+        };
+
+        _proto.scaleUp = function scaleUp(node, scale, duration) {
+          tween(node).to(duration, {
+            scale: scale
+          }).call(function () {
+            node.active = false;
+          }).start();
+        };
         _proto.showHistoryS_Panel = function showHistoryS_Panel(winNum) {
           this.historyS_Panel.getComponent(ScrollView).scrollToRight();
           if (this.historyS_ItemParent.children.length >= 20) {
@@ -1613,17 +1658,17 @@ System.register("bundle://main/_virtual/UIController.ts", ['./rollupPluginModLoB
           this.rocketParent.active = true;
           this.counterPanel.active = true;
           this.lblCountdown.string = "6";
-          this.bgSprite.spriteFrame = this.bgInitialSpriteFrame;
+          this.stopBgAnimation();
+          this.bgSprite.node.setPosition(0, 671.973);
         };
         _proto.launchingGameStageUI = function launchingGameStageUI() {
           this.rocketLaunchCounter();
         };
         _proto.inFlightGameStageUI = function inFlightGameStageUI() {
-          this.flareNode.active = true;
-          this.rocketParent.children[0].children[1].destroy();
-          this.rocketParent.children[0].children[2].destroy();
           this.counterPanel.active = false;
-          this.bgSprite.spriteFrame = this.bgFlightSpriteFrame;
+          this.fadeInOut(this.starNode, 0.5);
+          this.bgSprite.node.setPosition(0, 450);
+          this.bgAnimation();
           this.multipierPanel.active = true;
           this.lblWinningNum.string = "1.00X";
         };
@@ -1847,35 +1892,28 @@ System.register("bundle://main/_virtual/UIController.ts", ['./rollupPluginModLoB
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor31 = _applyDecoratedDescriptor(_class2.prototype, "bgSprite", [_dec32], {
+      }), _descriptor31 = _applyDecoratedDescriptor(_class2.prototype, "starNode", [_dec32], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor32 = _applyDecoratedDescriptor(_class2.prototype, "bgInitialSpriteFrame", [_dec33], {
+      }), _descriptor32 = _applyDecoratedDescriptor(_class2.prototype, "bgSprite", [_dec33], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor33 = _applyDecoratedDescriptor(_class2.prototype, "bgFlightSpriteFrame", [_dec34], {
+      }), _descriptor33 = _applyDecoratedDescriptor(_class2.prototype, "historyItemPrefab", [_dec34], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: function initializer() {
           return null;
         }
-      }), _descriptor34 = _applyDecoratedDescriptor(_class2.prototype, "historyItemPrefab", [_dec35], {
-        configurable: true,
-        enumerable: true,
-        writable: true,
-        initializer: function initializer() {
-          return null;
-        }
-      }), _descriptor35 = _applyDecoratedDescriptor(_class2.prototype, "historyS_ItemPrefab", [_dec36], {
+      }), _descriptor34 = _applyDecoratedDescriptor(_class2.prototype, "historyS_ItemPrefab", [_dec35], {
         configurable: true,
         enumerable: true,
         writable: true,
@@ -1889,7 +1927,7 @@ System.register("bundle://main/_virtual/UIController.ts", ['./rollupPluginModLoB
 });
 
 (function(r) {
-  r('virtual:///prerequisite-imports/main', 'bundle://main/_virtual/main'); 
+  r('virtual:///prerequisite-imports/main', 'chunks:///_virtual/main'); 
 })(function(mid, cid) {
     System.register(mid, [cid], function (_export, _context) {
     return {
